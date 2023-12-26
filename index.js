@@ -123,3 +123,20 @@ for (let index = 1; index < finances.length; index++) { //This line runs a "for"
 
     }
 }
+
+//Greatest decrease
+
+var greatestDecrease = 0 //This line initializes, as an Int type, a variable called "greatestDecrease".
+var currentDecrease = 0 //This line initializes, as an Int type, a variable called "currentDecrease".
+var period2 = "" //This line initializes, as a Str type, a variable called "period2".
+
+for (let index = 1; index < finances.length; index++) { //This line runs a "for" loop through all the elements in the "finances" array, starting at position 1.
+    if (finances[index][1] < finances[index - 1][1]) { //This line starts an "if" section: if the value of the curent element in the "for loop" is lesser than the preceding elements, ...
+        currentDecrease = finances[index][1] - finances[index - 1][1] //... store the difference between the two inside the "currentDecrease" variable.
+        if (currentDecrease < greatestDecrease) { //This line starts another "if" section (inside the first "if" section): if the value inside the "currentDecrease" variable is lesser than the value inside the "greatestDecrease" variable, ...
+            period2 = finances[index][0] //... store, inside the "period" variable, the contents in position "0" of the element currently being analysed by the "for" loop and...
+            greatestDecrease = currentDecrease //... and store the current value of "currentIncrease" inside the "greatestDecrease" variable.
+        }
+
+    }
+}
