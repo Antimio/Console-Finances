@@ -15,11 +15,11 @@ To use the webpage:
 
 1 - Navigate to it and, anywhere on the page, right-click and select "Inspect"
 
-![Image of "Inspect" option in the list](/images/Inspect.png)
+![Image of "Inspect" option in the list](images/Inspect.png)
 
 2 - In the Ispect page, go to the Console tab
 
-![Image of the webpage's console](/images/Console.png)
+![Image of the webpage's console](images/Console.png)
 
 
 ## Credits
