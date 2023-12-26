@@ -145,4 +145,4 @@ for (let index = 1; index < finances.length; index++) { //This line runs a "for"
 
 console.log("Financial Analysis\n\n" + "------------------\n\n" + "Total Months: " +
     totalMonths + "\n\n" + "Total: " + "$" + netTotal + "\n\n" + "Average Change:" + averageChange + "\n\n" + "Greatest Increase in Profits/Losses: " +
-    period1 + " ($" + greatestIncrease + ")" + "\n\n" + "Greatest Increase in Profits/Losses: " + period2 + " ($" + greatestDecrease + ")")
+    period1 + " ($" + greatestIncrease + ")" + "\n\n" + "Greatest Decrease in Profits/Losses: " + period2 + " ($" + greatestDecrease + ")")
