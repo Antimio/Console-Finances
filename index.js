@@ -89,3 +89,10 @@ var finances = [
 
 //Total number of months//
 var totalMonths = finances.length //This line establishes the length of the "finances" array and stores the number inside a variable called "totalMonths".
+
+//Total amount//
+var netTotal = 0 //This line initializes, as an Int type, a variable called "netTotal".
+
+for (let index = 0; index < finances.length; index++) { //This section runs a "for" loop through all the elements in the "finances" array and stores the sum of all the figures in position 1 of each array element into the "netTotal" 
+    netTotal += finances[index][1]
+}
