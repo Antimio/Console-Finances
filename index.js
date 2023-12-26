@@ -106,3 +106,20 @@ for (let index = 1; index < finances.length; index++) { //This line runs a "for"
 }
 
 var averageChange = (changeAmount / (totalMonths - 1)).toFixed(2) //Store, into a variable called "averageChange", the quotient of the value stored in "changeAmount" and the total number of "differences" (85) in the "finances" array. Cap it at 2 decimal places.
+
+//Greatest increase
+
+var greatestIncrease = 0 //This line initializes, as an Int type, a variable called "greatestIncrease".
+var currentIncrease = 0 //This line initializes, as an Int type, a variable called "currentIncrease".
+var period1 = "" //This line initializes, as a Str type, a variable called "period1".
+
+for (let index = 1; index < finances.length; index++) { //This line runs a "for" loop through all the elements in the "finances" array, starting at position 1.
+    if (finances[index][1] > finances[index - 1][1]) { //This line starts an "if" section: if the value of the curent element in the "for loop" is greater than the preceding elements, ...
+        currentIncrease = finances[index][1] - finances[index - 1][1] //... store the difference between the two inside the "currentIncrease" variable.
+        if (currentIncrease > greatestIncrease) { //This line starts another "if" section (inside the first "if" section): if the value inside the "currentIncrease" variable is greater than the value inside the "greatestIncrease" variable, ...
+            period1 = finances[index][0] //... store, inside the "period" variable, the contents in position "0" of the element currently being analysed by the "for" loop and...
+            greatestIncrease = currentIncrease //... and store the current value of "currentIncrease" inside the "greatestIncrease" variable.
+        }
+
+    }
+}
