@@ -7,7 +7,7 @@ This project was carried out to create an app that analyses the raw data of the 
 
 ## Installation
 
-To use this webpage, the user must have access to the internet. Enter, in the search bar, the address "https://github.com/Antimio/Console-Finances" and press Enter.
+To use this webpage, the user must have access to the internet. Enter, in the search bar, the address "https://antimio.github.io/Console-Finances/" and press Enter.
 
 ## Usage
 
