@@ -140,3 +140,9 @@ for (let index = 1; index < finances.length; index++) { //This line runs a "for"
 
     }
 }
+
+//Log the results onto the console
+
+console.log("Financial Analysis\n" + "------------------\n" + "Total Months: " +
+    totalMonths + "\n" + "Total: " + "$" + netTotal + "\n" + "Average Change:" + averageChange + "\n" + "Greatest Increase in Profits/Losses: " +
+    period1 + " ($" + greatestIncrease + ")" + "\n" + "Greatest Increase in Profits/Losses: " + period2 + " ($" + greatestDecrease + ")")
