@@ -96,3 +96,13 @@ var netTotal = 0 //This line initializes, as an Int type, a variable called "net
 for (let index = 0; index < finances.length; index++) { //This section runs a "for" loop through all the elements in the "finances" array and stores the sum of all the figures in position 1 of each array element into the "netTotal" 
     netTotal += finances[index][1]
 }
+
+//Average change//
+var changeAmount = 0 //This line initializes, as an Int type, a variable called "changeAmount".
+
+
+for (let index = 1; index < finances.length; index++) { //This line runs a "for" loop through all the elements in the "finances" array, starting at position 1.
+    changeAmount += finances[index][1] - finances[index - 1][1] //Accrue, into the "changeAmount" variable, the difference between each element in the "finance" array and the preceding element.
+}
+
+var averageChange = (changeAmount / (totalMonths - 1)).toFixed(2) //Store, into a variable called "averageChange", the quotient of the value stored in "changeAmount" and the total number of "differences" (85) in the "finances" array. Cap it at 2 decimal places.
